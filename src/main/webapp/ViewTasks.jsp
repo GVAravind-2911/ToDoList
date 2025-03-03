@@ -89,10 +89,9 @@
                 <%
                 } else if (taskStatus == 2) {
                 %>
-                <form method="post" action="./ChangeTaskStatusServlet">
+                <form method="post" action="./MarkTaskCompletedServlet">
                     <input type="hidden" name="taskId" value="<%=taskId%>">
                     <input type="hidden" name="regId" value="<%=regId%>">
-                    <input type="hidden" name="taskStatus" value="3">
                     <button type="submit" class="btn btn-primary btn-sm">Complete</button>
                 </form>
                 <%
