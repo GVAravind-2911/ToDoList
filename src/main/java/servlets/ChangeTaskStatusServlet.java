@@ -31,7 +31,7 @@ public class ChangeTaskStatusServlet extends HttpServlet {
             boolean isUpdated = dao.changeTaskStatus(regId, taskId, taskStatus);
 
             if (isUpdated) {
-                context.getRequestDispatcher("/ViewTasks.jsp").forward(request, response);
+                response.sendRedirect("./ViewTasks.jsp");
             } else {
                 out.println("<h3>Error updating task status</h3>");
             }

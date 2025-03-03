@@ -17,7 +17,7 @@ import dao.ToDoDAOIntf;
 
 @WebServlet("/MarkTaskCompletedServlet")
 public class MarkTaskCompletedServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out=response.getWriter();
         HttpSession session=request.getSession();
