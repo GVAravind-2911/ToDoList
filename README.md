@@ -41,8 +41,6 @@ src/
 - Java 11 or higher
 - Maven 3.6 or higher
 - Jakarta Servlet API 4.0.4
-- JUnit 4.13.2
-- Mockito 4.0.0
 
 ## Setup
 
